@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+}
+/*--HEADING PART START------------------------*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+body{
+    margin :0;
+}
+img{
+    width:80px;
+    height:80px;
+    border-radius: 80px;
+}
+h1{
+    color:blue;
+    text-align: center;
+}
+a{
+    color:blue;
+    text-decoration: none;
+}
+
+[class*="col-"]
+{
+    float: left;
+    padding: 10px;
+}
+
+/*mobile*/
+@media screen and (max-width:700px) {
+    [class*="col-"]
+{
+    width:100%;
+}
+.name h1{
+    color:blueviolet;
+    margin: 0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu a{
+    background-color:cornsilk;
+    margin:5px 0;
+    padding: 5px 0;
+    border-radius: 20px;
+}
+.menu a:hover{
+    background-color: darkgrey;
+}
+}
+.nav{
+    background-color: aquamarine;
+    padding: 1% 7%;
+    text-align: center;
+}
+.nav::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+/*--HEADING PART START------------------------*/
+
+
+/*-DESCRIPTION PART START------------------------*/
+.main-body{
+    background-color: lightcyan;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+@media screen and (max-width:700px){
+.main-body .top-img{
+    position: absolute;
+    right: 30px;
+    top:15px;
+    transition: transform 2s;
+}
+.main-body .top-img:hover{
+    transform: rotate(360deg);
+}
+.main-body h2{
+    font-family: cursive;
+}
+.main-body p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 5px;
+    margin: 10px;
+}
+.main-body .bottom-img{
+    position: absolute;
+    left: 40px;
+    bottom:5px;
+    transition: transform 2s;
+}
+.main-body .bottom-img:hover{
+    transform: rotate(360deg);
+}
+}
+.nav::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+/*-DESCRIPTION PART END------------------------*/
+
+
+/*ABOUT SECTION START------------------------*/
+
+.about-section{
+    background-color: paleturquoise;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-section::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width:700px){
+    .about-me{
+        font-size:2rem;
+    }
+    .dot-hr{
+        border: dotted 5px black;
+        border-bottom: none;
+        width:130px;
+        margin:2px auto;
+    }
+    .bimal img{
+        width: 150px;
+        height: 160px;
+        border: solid aqua;
+        margin: 20px;
+    }
+    .about-section .para{
+        word-spacing: 5px;
+        margin:10px 20px;
+        padding: 10px 15px;
+    }
+    .hrs{
+        border: 1px solid black;
+        margin: 5px 20px;
+    }
+    .about-section .para1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    .about-section .cv{
+        padding: 10px;
+    }
+    .about-section .cv-in{
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 6px 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .about-section .cv-in:hover{
+        background-color: blueviolet;
+        color: white;
+    }
+}
+.about-section::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/*ABOUT SECTION END------------------------*/
+
+/*-------------CARD PART START--------------*/
+.experience{
+  padding: 10px;
+   
+}
+.work-experience{
+    height: 400px;
+    background-color: darkolivegreen;
+    width:300px;
+    margin:5px 5px;
+    float: left;
+    margin: 10px;
+    
+}
+ .icon{
+    text-align: center;
+    
+}
+.icon img{
+    margin-top:10px;
+    border:3px solid pink;
+}
+.work-title{
+    text-align: center;
+    background-color: blanchedalmond;
+    margin:3px 5px;
+}
+.desc li{
+    padding: 8px;
+}
+.work-experience:hover{
+    box-shadow: 2px 4px 4px 4px black ;
+}
+
+.descrip{
+    padding: 0 3px;
+}
+.descrip li{
+   margin:25px 0;
+   list-style: none;
+   text-transform: capitalize;
+   font-weight: bold;
+   position: relative;
+}
+.descrip li::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top: calc(100% + 1px);
+    width: 90%;
+    height: 10px;
+    background-color: grey;
+    border-radius: 500px;
+}
+.descrip li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 1px);
+    left:0;
+    width: 0;
+    height: 10px;
+    background-color:blue;
+    border-radius: 500px;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.descrip li.html::after{
+    animation-name:html;
+}
+@keyframes html{
+    to{
+        width: 80%;
+    }
+}
+.descrip li.css::after{
+    animation-name:css;
+}
+@keyframes css{
+    to{
+        width: 70%;
+    }
+}
+.descrip li.javascript::after{
+    animation-name:javascript;
+}
+@keyframes javascript{
+    to{
+        width: 60%;
+    }
+}
+.descrip li.python::after{
+    animation-name:python;
+}
+@keyframes python{
+    to{
+        width: 50%;
+    }
+}
+.descrip li.java::after{
+    animation-name:java;
+}
+@keyframes java{
+    to{
+        width: 40%;
+    }
+}
+
+.experience::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/*-------------CARD PART END-------------*/
+
+/*-----------------------ACHIEVEMENT PART START----------------------------*/
+
+.achievement{
+    padding: 10px;
+    background-color: cornflowerblue;
+}
+.achieve{
+   margin:10px;
+    background-color:bisque;
+    border: none;
+    border-radius: 10px;
+}
+.achieve h2{
+    text-align: center;
+}
+.form{
+    margin: 5px;
+    background-color:rgb(115, 115, 167);
+    border: none;
+    border-radius: 10px;
+}
+.form form{
+    text-align: center;
+}
+.form h2{
+    text-align: center;
+}
+
+.form input,textarea{
+    resize: none;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color:aquamarine;
+}
+.form .submit{
+    margin:5px;
+    width:70px;
+    color:blue;
+    cursor: pointer;
+    background-color:pink;
+}
+
+.more-ways{
+    text-align: center;
+    background-color: burlywood;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.more-ways button{
+    font-size: 20px;
+    margin: 20px;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.achievement::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* -- --------------------------------footer part start------------------------------- */
+
+.footer{
+    background-color: black;
+    margin:10px;
+    text-align: center;
+    font-size: 1rem;
+}
+.footer-menu a{
+    color:white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.footer-menu a:hover{
+    color:pink;
+}
+.copy{
+    color:white;
+    padding: 10px;
+}
+
+
+/* -- --------------------------------footer part end------------------------------- */
+

@@ -1,0 +1,276 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* -------------HEADING PART END---------------------------------------*/
+
+.nav{
+    background-color:lightskyblue;
+}
+.photo{
+    text-align: left;
+}
+.name h1{
+    text-align: right;
+}
+.nav .menu{
+   text-align: right;
+   margin:30px 0;
+}
+.menu a{
+    background-color: cyan;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.menu a:hover{
+color:black;
+background-color: darkcyan;
+}
+/* -------------HEADING PART END---------------------------------------*/
+
+
+/* -------------DESCRIPTION PART END---------------------------------------*/
+
+.main-body .top-img{
+    position: absolute;
+    right: 120px;
+    top:15px;
+    width:80px;
+}
+.main-body .top-img:hover{
+    width:100px;
+    top:25px;
+}
+.main-body p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.main-body .bottom-img{
+    position: absolute;
+    left: 120px;
+    bottom:5px;
+    transition: transform 2s;
+}
+.main-body .bottom-img:hover{
+    transform: rotate(360deg);
+}
+/* -------------DESCRIPTION PART END---------------------------------------*/
+
+
+/*-------------ABOUT SECTION START--------------*/
+.about-me{
+    font-size:2rem;
+}
+.dot-hr{
+    border: dotted 5px black;
+    border-bottom: none;
+    width:130px;
+    margin:2px auto;
+}
+.bimal img{
+    width: 180px;
+    height: 200px;
+    border: solid aqua;
+    margin-top: 20px;
+
+}
+.about-section .para{
+    word-spacing: 5px;
+    padding: 10px 0;
+    text-align: left;
+}
+.hrs{
+    border: 1px solid black;
+   
+}
+.about-section .para1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+.about-section .cv{
+    padding: 10px;
+    margin:20px;
+}
+.about-section .cv-in{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.about-section .cv-in:hover{
+    background-color: blueviolet;
+    color: white;
+}
+/*-------------ABOUT SECTION END--------------*/
+
+/*----------------CARD PART START---------------
+-----------------------------------------------------------------*/
+.experience{
+    background-color: cyan;
+     
+  }
+  .work-experience{
+      height: 400px;
+      background-color: darkolivegreen;
+      width:300px;
+      margin:5px 5px;
+      float: left;
+      margin: 10px;
+      
+  }
+   .icon{
+      text-align: center;
+      
+  }
+  .icon img{
+      margin-top:10px;
+      border:3px solid pink;
+  }
+  .work-title{
+      text-align: center;
+      background-color: blanchedalmond;
+      margin:3px 5px;
+  }
+  .desc li{
+      padding: 8px;
+  }
+  .work-experience:hover{
+      box-shadow: 2px 4px 4px 4px black ;
+  }
+  
+  .descrip{
+      padding: 0 3px;
+  }
+  .descrip li{
+     margin:25px 0;
+     list-style: none;
+     text-transform: capitalize;
+     font-weight: bold;
+     position: relative;
+  }
+  .descrip li::before{
+      content: '';
+      position: absolute;
+      left:0;
+      top: calc(100% + 1px);
+      width: 90%;
+      height: 10px;
+      background-color: grey;
+      border-radius: 500px;
+  }
+  .descrip li::after{
+      content: '';
+      position: absolute;
+      top: calc(100% + 1px);
+      left:0;
+      width: 0;
+      height: 10px;
+      background-color:blue;
+      border-radius: 500px;
+      animation-duration: 2s;
+      animation-delay: 3s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+  }
+  .descrip li.html::after{
+      animation-name:html;
+  }
+  @keyframes html{
+      to{
+          width: 80%;
+      }
+  }
+  .descrip li.css::after{
+      animation-name:css;
+  }
+  @keyframes css{
+      to{
+          width: 70%;
+      }
+  }
+  .descrip li.javascript::after{
+      animation-name:javascript;
+  }
+  @keyframes javascript{
+      to{
+          width: 60%;
+      }
+  }
+  .descrip li.python::after{
+      animation-name:python;
+  }
+  @keyframes python{
+      to{
+          width: 50%;
+      }
+  }
+  .descrip li.java::after{
+      animation-name:java;
+  }
+  @keyframes java{
+      to{
+          width: 40%;
+      }
+  }
+  /*----------------CARD PART END---------------
+-----------------------------------------------------------------*/
+
+/*-----------achievement part start--------------*/
+.achieve{
+   margin:10px;
+    background-color:bisque;
+    border: none;
+    border-radius: 10px;
+}
+.achieve h2{
+    text-align: center;
+}
+.form{
+    margin: 5px;
+    background-color:rgb(115, 115, 167);
+    border: none;
+    border-radius: 10px;
+}
+.form form{
+    text-align: center;
+}
+.form h2{
+    text-align: center;
+}
+
+.form input,textarea{
+    resize: none;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color:aquamarine;
+}
+.form .submit{
+    margin:5px;
+    width:100px;
+    border:2px green solid;
+    color:blue;
+    cursor: pointer;
+    background-color:pink;
+}
+/*-----------achievement part end--------------*/
+.footer-menu a{
+    display: inline;
+    margin-top:300px;
+}
